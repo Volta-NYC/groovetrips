@@ -1,22 +1,28 @@
-import Link from "next/link"
-
+import Link from "next/link";
 export default function Footer() {
   return (
-    <footer className="border-t mt-16">
-      <div className="max-w-6xl mx-auto px-6 py-8 text-sm text-gray-500 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex flex-col gap-1">
-          <div>© {new Date().getFullYear()} Business Name</div>
-          <Link
-            href="https://www.novusnyc.org/"
-            target="_blank"
-            rel="noreferrer"
-            className="text-[#F6B78D] hover:text-[#F6B78D] hover:underline"
-          >
-            Made by Novus
-          </Link>
+    <footer className="footer">
+      <div className="footer-top">
+        <Link className="wordmark" href="/">
+          groove<span>trips</span>
+          <i>✳</i>
+        </Link>
+        <p>
+          A world to explore.
+          <br />A community to come home to.
+        </p>
+        <div>
+          <Link href="/trips">Find your trip</Link>
+          <Link href="/about">Our story</Link>
+          <Link href="/journal">Travel journal</Link>
+          <Link href="/contact">Let’s connect</Link>
         </div>
-        <div>Built with Volta</div>
+      </div>
+      <div className="footer-bottom">
+        <span>© {new Date().getFullYear()} GrooveTrips</span>
+        <span>Travel with purpose. Come back with a story.</span>
+        <a href="#main">Back to top ↑</a>
       </div>
     </footer>
-  )
+  );
 }

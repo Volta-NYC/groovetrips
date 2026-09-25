@@ -1,0 +1,23 @@
+{
+  "src": null,
+  "poster": "/media/152ba7dd4788.webp",
+  "status": "blocked_plan_requirement",
+  "provider": "Higgsfield",
+  "model": "kling3_0_turbo",
+  "submittedCount": 0,
+  "message": "Both requested options were rejected: Requires basic plan or higher.",
+  "options": [
+    {
+      "duration": 8,
+      "resolution": "1080p",
+      "aspect_ratio": "16:9",
+      "direction": "A single continuous slow forward aerial shot over turquoise Andaman water toward lush limestone islands, warm afternoon light, a distant longtail boat, stable horizon, no cuts, no text."
+    },
+    {
+      "duration": 6,
+      "resolution": "1080p",
+      "aspect_ratio": "16:9",
+      "direction": "A single continuous low aerial tracking shot along a lush limestone island, revealing a secluded lagoon, constant camera speed, natural teal and jade tones, no cuts, no text."
+    }
+  ]
+}

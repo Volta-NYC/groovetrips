@@ -1,9 +1,6 @@
 export default function JoinSection() {
   return (
     <section className="join-section" data-reveal>
-      <span className="join-spark" aria-hidden="true">
-        ✳
-      </span>
       <div>
         <p className="eyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
         <h2>

@@ -15,11 +15,8 @@ export default function HomePage() {
       <CinematicHero poster={film.poster} videoSrc={film.src ?? undefined} />
       <div className="belief-strip">
         <span>LOCALLY ROOTED</span>
-        <i>✳</i>
         <span>CULTURALLY CURIOUS</span>
-        <i>✳</i>
         <span>COMMUNITY FIRST</span>
-        <i>✳</i>
         <span>ALWAYS IN GOOD COMPANY</span>
       </div>
       <section className="intro section" id="intro" data-reveal>

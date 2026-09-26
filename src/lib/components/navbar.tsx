@@ -9,7 +9,6 @@ export default function Navbar() {
     <header className={`site-header ${path === "/" ? "over-hero" : ""}`}>
       <Link href="/" className="wordmark" aria-label="GrooveTrips home">
         groove<span>trips</span>
-        <i>✳</i>
       </Link>
       <nav className="desktop-nav" aria-label="Main navigation">
         <Link href="/trips">Find your trip</Link>

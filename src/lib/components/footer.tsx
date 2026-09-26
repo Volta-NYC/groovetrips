@@ -5,7 +5,6 @@ export default function Footer() {
       <div className="footer-top">
         <Link className="wordmark" href="/">
           groove<span>trips</span>
-          <i>✳</i>
         </Link>
         <p>
           A world to explore.

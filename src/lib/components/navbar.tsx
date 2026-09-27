@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
+import Arrow from "@/lib/components/arrow";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
@@ -21,7 +22,7 @@ export default function Navbar() {
         target="_blank"
         rel="noreferrer"
       >
-        Join the tribe <span>↗</span>
+        Join the tribe <Arrow />
       </a>
       <button
         className="menu-toggle"
@@ -45,7 +46,7 @@ export default function Navbar() {
           ].map(([href, label]) => (
             <Link key={href} href={href} onClick={() => setOpen(false)}>
               {label}
-              <span>↗</span>
+              <Arrow />
             </Link>
           ))}
         </nav>

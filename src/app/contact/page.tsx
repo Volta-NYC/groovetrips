@@ -1,5 +1,6 @@
 import LocalImage from "@/lib/components/local-image";
 import Link from "next/link";
+import Arrow from "@/lib/components/arrow";
 export const metadata = {
   title: "Join the tribe",
   description:
@@ -25,11 +26,11 @@ export default function Contact() {
           rel="noreferrer"
           className="button button-dark"
         >
-          Connect with GrooveTrips <span>↗</span>
+          Connect with GrooveTrips <Arrow />
         </a>
         <small>Continue to the GrooveTrips inquiry form.</small>
         <Link href="/trips" className="text-link">
-          Still exploring? See the trips <span>↗</span>
+          Still exploring? See the trips <Arrow />
         </Link>
       </div>
       <LocalImage

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Arrow from "@/lib/components/arrow";
 export default function Footer() {
   return (
     <footer className="footer">
@@ -20,7 +21,7 @@ export default function Footer() {
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} GrooveTrips</span>
         <span>Travel with purpose. Come back with a story.</span>
-        <a href="#main">Back to top ↑</a>
+        <a href="#main">Back to top <Arrow direction="up" /></a>
       </div>
     </footer>
   );

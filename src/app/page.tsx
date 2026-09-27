@@ -8,6 +8,7 @@ import CinematicHero from "@/lib/components/cinematic-hero";
 import TripCard from "@/lib/components/trip-card";
 import JoinSection from "@/lib/components/join-section";
 import Reveal from "@/lib/components/reveal";
+import Arrow from "@/lib/components/arrow";
 const gallery = images["www.groovetrips.com_gallery-3.md"];
 export default function HomePage() {
   return (
@@ -32,7 +33,7 @@ export default function HomePage() {
           local culture, shared rhythms, and real connection.
         </p>
         <Link className="text-link" href="/about">
-          This is how we groove <span>↗</span>
+          This is how we groove <Arrow />
         </Link>
         <span className="intro-coordinate">
           CULTURE × CONNECTION × COMMUNITY
@@ -53,7 +54,7 @@ export default function HomePage() {
               We’ll bring the people who get you.
             </p>
             <Link className="text-link" href="/trips">
-              Explore all trips <span>↗</span>
+              Explore all trips <Arrow />
             </Link>
           </div>
         </div>
@@ -117,7 +118,7 @@ export default function HomePage() {
             </span>
           </div>
           <Link href="/about" className="text-link">
-            Meet your travel tribe <span>↗</span>
+            Meet your travel tribe <Arrow />
           </Link>
         </div>
       </section>
@@ -178,7 +179,7 @@ export default function HomePage() {
             every GrooveTrip.
           </p>
           <Link className="text-link" href="/about">
-            Get to know our founder <span>↗</span>
+            Get to know our founder <Arrow />
           </Link>
         </div>
       </section>
@@ -191,7 +192,7 @@ export default function HomePage() {
             </h2>
           </div>
           <Link className="text-link" href="/journal">
-            The travel journal <span>↗</span>
+            The travel journal <Arrow />
           </Link>
         </div>
         <div className="journal-grid">
@@ -210,7 +211,7 @@ export default function HomePage() {
                   width="700"
                   height="500"
                 />
-                <span>↗</span>
+                <Arrow />
               </div>
               <p className="journal-meta">
                 {["DOMINICAN REPUBLIC", "THAILAND", "COSTA RICA"][i]}{" "}
@@ -225,7 +226,7 @@ export default function HomePage() {
                   ][i]
                 }
               </h3>
-              <span className="journal-read">Read the story ↗</span>
+              <span className="journal-read">Read the story <Arrow /></span>
             </Link>
           ))}
         </div>

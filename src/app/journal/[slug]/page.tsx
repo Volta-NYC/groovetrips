@@ -3,6 +3,7 @@ import Link from "next/link";
 import posts from "@/lib/data/posts.json";
 import ArticleContent from "@/lib/components/article-content";
 import JoinSection from "@/lib/components/join-section";
+import Arrow from "@/lib/components/arrow";
 export function generateStaticParams() {
   return posts.map((p) => ({ slug: p.slug }));
 }
@@ -27,7 +28,7 @@ export default async function Article({
     <>
       <header className="article-heading section">
         <Link href="/journal" className="back-link">
-          ← The travel journal
+          <Arrow direction="left" /> The travel journal
         </Link>
         <p className="eyebrow">STORIES WITH SOUL</p>
         <h1>{post.title}</h1>
@@ -40,7 +41,7 @@ export default async function Article({
       </article>
       <div className="article-end">
         <Link href="/journal" className="text-link">
-          More from the road <span>↗</span>
+          More from the road <Arrow />
         </Link>
       </div>
       <JoinSection />

@@ -1,3 +1,4 @@
+import Arrow from "@/lib/components/arrow";
 export default function JoinSection() {
   return (
     <section className="join-section" data-reveal>
@@ -20,7 +21,7 @@ export default function JoinSection() {
           target="_blank"
           rel="noreferrer"
         >
-          Find your travel tribe <span>↗</span>
+          Find your travel tribe <Arrow />
         </a>
       </div>
     </section>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import trips from "@/lib/data/trips.json";
 import TripCard from "@/lib/components/trip-card";
+import Arrow from "@/lib/components/arrow";
 export function generateStaticParams() {
   return trips.map((t) => ({ slug: t.slug }));
 }
@@ -38,7 +39,7 @@ export default async function Trip({
         <div className="detail-shade" />
         <div>
           <Link href="/trips" className="back-link">
-            ← All journeys
+            <Arrow direction="left" /> All journeys
           </Link>
           <p className="eyebrow">THE GROOVETRIPS COLLECTION / {trip.year}</p>
           <h1>{trip.name}</h1>
@@ -73,7 +74,7 @@ export default async function Trip({
             target="_blank"
             rel="noreferrer"
           >
-            Ask about this trip <span>↗</span>
+            Ask about this trip <Arrow />
           </a>
           <small>Connect directly with the GrooveTrips team.</small>
         </aside>
@@ -84,7 +85,7 @@ export default async function Trip({
             Keep <em>exploring.</em>
           </h2>
           <Link className="text-link" href="/trips">
-            All journeys <span>↗</span>
+            All journeys <Arrow />
           </Link>
         </div>
         <div className="trip-grid">

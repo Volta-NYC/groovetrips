@@ -2,6 +2,7 @@
 import { useState } from "react";
 import trips from "@/lib/data/trips.json";
 import TripCard from "./trip-card";
+import Arrow from "@/lib/components/arrow";
 export default function TripCollection() {
   const [year, setYear] = useState(0);
   const filtered = trips.filter((t) => !year || t.year === year);
@@ -20,7 +21,7 @@ export default function TripCollection() {
               aria-pressed={year === y}
             >
               {y || "All journeys"}
-              {year === y && <span>↗</span>}
+              {year === y && <Arrow />}
             </button>
           ))}
         </div>

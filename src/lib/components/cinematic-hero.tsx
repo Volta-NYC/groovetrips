@@ -2,6 +2,7 @@
 import LocalImage from "@/lib/components/local-image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import Arrow from "@/lib/components/arrow";
 
 const vertex = `attribute vec2 a_position;varying vec2 v_uv;void main(){v_uv=a_position*.5+.5;gl_Position=vec4(a_position,0.,1.);}`;
 const fragment = `precision mediump float;
@@ -313,7 +314,7 @@ export default function CinematicHero({
             Your tribe is out there.
           </p>
           <Link href="/trips" className="button button-white">
-            Explore the trips <span>↗</span>
+            Explore the trips <Arrow />
           </Link>
         </div>
         <div className="hero-chapter" aria-hidden="true">
@@ -328,7 +329,7 @@ export default function CinematicHero({
         </div>
         <div className="hero-bottom">
           <a href="#intro">
-            SCROLL INTO YOUR NEXT CHAPTER <span>↓</span>
+            SCROLL INTO YOUR NEXT CHAPTER <Arrow direction="down" />
           </a>
           <div className="hero-footnote">
             <span>THE GROOVETRIPS WAY</span>

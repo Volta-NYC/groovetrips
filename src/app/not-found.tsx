@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Arrow from "@/lib/components/arrow";
 export default function NotFound() {
   return (
     <section className="page-heading section">
@@ -12,7 +13,7 @@ export default function NotFound() {
         We couldn’t find that page, but your next adventure is still out there.
       </p>
       <Link className="button button-dark" href="/trips">
-        Explore the trips <span>↗</span>
+        Explore the trips <Arrow />
       </Link>
     </section>
   );

@@ -2,6 +2,7 @@ import LocalImage from "@/lib/components/local-image";
 import Link from "next/link";
 import posts from "@/lib/data/posts.json";
 import JoinSection from "@/lib/components/join-section";
+import Arrow from "@/lib/components/arrow";
 export const metadata = {
   title: "Travel journal",
   description:
@@ -39,14 +40,14 @@ export default function Journal() {
                   width="700"
                   height="500"
                 />
-                <span>↗</span>
+                <Arrow />
               </div>
               <p className="journal-meta">
                 {post.author}
                 <span>{post.date}</span>
               </p>
               <h3>{post.title}</h3>
-              <span className="journal-read">Read the story ↗</span>
+              <span className="journal-read">Read the story <Arrow /></span>
             </Link>
           ))}
         </div>

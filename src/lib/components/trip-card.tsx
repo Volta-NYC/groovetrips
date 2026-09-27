@@ -1,6 +1,7 @@
 import LocalImage from "@/lib/components/local-image";
 import Link from "next/link";
 import trips from "@/lib/data/trips.json";
+import Arrow from "@/lib/components/arrow";
 export type Trip = (typeof trips)[number];
 export default function TripCard({
   trip,
@@ -21,7 +22,9 @@ export default function TripCard({
         />
         <span className="trip-year">{trip.year} COLLECTION</span>
         <span className="trip-index">{String(index + 1).padStart(2, "0")}</span>
-        <span className="trip-circle">↗</span>
+        <span className="trip-circle">
+          <Arrow />
+        </span>
       </div>
       <div className="trip-info">
         <h3>{trip.name}</h3>

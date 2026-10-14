@@ -9,16 +9,17 @@ import TripCard from "@/lib/components/trip-card";
 import JoinSection from "@/lib/components/join-section";
 import Reveal from "@/lib/components/reveal";
 import Arrow from "@/lib/components/arrow";
+import PaymentOptions from "@/lib/components/payment-options";
 const gallery = images["www.groovetrips.com_gallery-3.md"];
 export default function HomePage() {
   return (
     <>
       <CinematicHero poster={film.poster} videoSrc={film.src ?? undefined} />
       <div className="belief-strip">
-        <span>LOCALLY ROOTED</span>
+        <span>SHOP SMALL. SHOP LOCAL.</span>
         <span>CULTURALLY CURIOUS</span>
         <span>COMMUNITY FIRST</span>
-        <span>ALWAYS IN GOOD COMPANY</span>
+        <span>TRAVEL WITH PURPOSE</span>
       </div>
       <section className="intro section" id="intro" data-reveal>
         <p className="eyebrow">MORE THAN A GETAWAY</p>
@@ -28,9 +29,10 @@ export default function HomePage() {
           <em>Come back more you.</em>
         </h2>
         <p>
-          Some trips change your scenery. The best ones change your perspective.
-          We bring curious people together for immersive journeys filled with
-          local culture, shared rhythms, and real connection.
+          We bring curious people together to build community through travel.
+          In every country we visit, we shop with small vendors, support local
+          artists and businesses, and share experiences with the people who
+          call it home.
         </p>
         <Link className="text-link" href="/about">
           This is how we groove <Arrow />
@@ -99,13 +101,16 @@ export default function HomePage() {
             <em>One shared rhythm.</em>
           </h2>
           <p>
-            A shared meal in Havana. A dance class with local artists. The quiet
-            of a Thai temple. We believe the most memorable part of a place is
-            the people you meet along the way.
+            A shared meal. A dance class with local artists. A conversation at
+            a neighborhood market. We build connections with each other and
+            with the communities that welcome us, one shared experience at a
+            time.
           </p>
           <p>
             Created with BIPOC travelers in mind and a place for everyone,
-            GrooveTrips is a community where you can show up as yourself.
+            GrooveTrips is a community where you can show up as yourself,
+            make lasting friendships, and keep connecting long after you
+            unpack.
           </p>
           <div className="community-stat">
             <strong>
@@ -128,18 +133,18 @@ export default function HomePage() {
           {[
             {
               n: "01",
-              title: "Go deeper.",
-              copy: "Connect with local artists, guides, and small businesses. Experience a culture through the people who call it home.",
+              title: "Shop local.",
+              copy: "Shop with small vendors, discover work by local artists, and choose neighborhood businesses in the countries we visit. Keep your spending connected to the people who make a place special.",
             },
             {
               n: "02",
               title: "Find your people.",
-              copy: "Travel alongside curious, like-minded people. Come solo, bring a friend, and make connections that go beyond the itinerary.",
+              copy: "Come solo or bring a friend. Shared meals, music, and adventures turn fellow travelers into a community, with friendships that go beyond the itinerary.",
             },
             {
               n: "03",
               title: "Make it matter.",
-              copy: "Travel with respect for the places that welcome you. Our partnerships support local communities and celebrate their traditions.",
+              copy: "Travel with respect for the communities that welcome us. Partner with local guides, artists, and small businesses, and celebrate their knowledge, creativity, and traditions.",
             },
           ].map((x) => (
             <article key={x.n} data-reveal>
@@ -150,6 +155,7 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      <PaymentOptions />
       <section className="founder-section section">
         <div className="founder-portrait" data-reveal>
           <LocalImage

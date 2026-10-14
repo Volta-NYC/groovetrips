@@ -20,6 +20,14 @@ export default function Contact() {
           Tell us a little about yourself, the places you’re dreaming of, and
           how you like to travel. We’d love to welcome you into our community.
         </p>
+        <div id="payment-options" className="contact-payment-note">
+          <h2>Let’s make room for your adventure.</h2>
+          <p>
+            Interested in a deposit or installment plan? Include your trip and
+            preferred payment schedule in your inquiry. Our team will explain
+            the options, amounts, and due dates so you can plan with confidence.
+          </p>
+        </div>
         <a
           href="https://www.groovetrips.com/contact-us"
           target="_blank"

@@ -7,7 +7,7 @@
   --paper: #faf9f5;
   --lime: #e2f0a6;
   --line: #d7ddd6;
-  --muted: #64716b;
+  --muted: #526459;
 }
 * {
   box-sizing: border-box;
@@ -78,15 +78,6 @@ img {
   width: 100%;
   color: white;
   border-bottom: 1px solid #ffffff35;
-}
-.wordmark {
-  font-size: 34px;
-  font-weight: 800;
-  letter-spacing: -2.2px;
-  white-space: nowrap;
-}
-.wordmark span {
-  font-weight: 400;
 }
 .desktop-nav {
   display: flex;
@@ -324,9 +315,6 @@ h2 em {
     height: 82px;
     padding: 0 6%;
   }
-  .wordmark {
-    font-size: 28px;
-  }
   .desktop-nav,
   .nav-cta {
     display: none;
@@ -456,11 +444,6 @@ h2 em {
 }
 body {
   font-family: Manrope, Arial, Helvetica, sans-serif;
-}
-.wordmark {
-  font-family: Manrope, Arial, sans-serif;
-  font-size: 33px;
-  letter-spacing: -2px;
 }
 .hero h1 em,
 h2 em,
@@ -599,7 +582,7 @@ h2 em,
   margin-top: 62px;
   font-size: 10px;
   letter-spacing: 3px;
-  color: #728171;
+  color: #526459;
 }
 .trip-section {
   padding-top: 75px;
@@ -718,7 +701,7 @@ h2 em,
 .trip-description {
   font-size: 13px;
   line-height: 1.8;
-  color: #657165;
+  color: #526459;
   margin: 12px 0 0;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -851,7 +834,7 @@ h2 em,
 }
 .values-grid article > span {
   font-size: 12px;
-  color: #718669;
+  color: #526459;
 }
 .values-grid h3 {
   font-size: 28px;
@@ -938,7 +921,7 @@ h2 em,
   gap: 15px;
   font-size: 9px;
   letter-spacing: 1px;
-  color: #6d7c6f;
+  color: #526459;
   line-height: 1.7;
   margin: 23px 0 12px;
 }
@@ -1045,7 +1028,7 @@ h2 em,
 }
 .collection-controls > span {
   font-size: 12px;
-  color: #72806b;
+  color: #526459;
 }
 .all-trips {
   row-gap: 65px;
@@ -1132,7 +1115,7 @@ h2 em,
   display: block;
   font-size: 11px;
   line-height: 1.6;
-  color: #6e7e63;
+  color: #50624d;
   margin-top: 18px;
   text-align: center;
 }
@@ -1285,7 +1268,7 @@ h2 em,
 .contact-page small {
   display: block;
   font-size: 11px;
-  color: #6e7d64;
+  color: #50624d;
   margin: 15px 0 35px;
 }
 .contact-page > img {
@@ -1346,9 +1329,6 @@ h2 em,
   }
 }
 @media (max-width: 760px) {
-  .wordmark {
-    font-size: 28px;
-  }
   .hero {
     height: 100svh;
     min-height: 700px;
@@ -1751,14 +1731,71 @@ h2 em,
 .hero:has(.hero-content:focus-within) .hero-chapter {
   opacity: 0 !important;
 }
-/* Small metadata remains readable at touch-device sizes. */
+/* Readable type scale shared by desktop and mobile. */
+.arrow-icon {
+  display: inline-flex;
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+.arrow-icon svg {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --text-body: clamp(18px, 1.3vw, 20px);
+  --text-ui: 16px;
+  --text-meta: 14px;
+}
+body {
+  font-size: var(--text-body);
+}
+.hero-description,
+.intro > p:not(.eyebrow),
+.section-heading > div > p:not(.eyebrow),
+.trip-description,
+.community-copy > p:not(.eyebrow),
+.values-grid p,
+.founder-copy > p:not(.eyebrow),
+.join-copy p,
+.page-heading > p:not(.eyebrow),
+.trip-story > p:not(.eyebrow),
+.booking-panel > p,
+.mission-columns p,
+.contact-page > div > p:not(.eyebrow),
+.payment-options-copy p,
+.trip-community-note p,
+.contact-payment-note p {
+  font-size: var(--text-body);
+  line-height: 1.8;
+}
+.desktop-nav,
+.nav-cta,
+.menu-toggle,
+.button,
+.booking-panel .button,
+.text-link,
+.contact-page .text-link,
+.section-heading > div:last-child .text-link,
+.filter-buttons button,
+.back-link,
+.journal-read,
+.community-stat > span,
+.footer-top > div {
+  font-size: var(--text-ui);
+}
 .eyebrow,
 .belief-strip,
+.belief-strip span,
 .hero-bottom,
 .hero-bottom a,
+.hero-footnote small,
 .hero-chapter .eyebrow,
+.detail-hero .eyebrow,
 .trip-year,
 .trip-index,
+.values-grid article > span,
 .trip-info p,
 .collection-note,
 .photo-caption,
@@ -1770,7 +1807,51 @@ h2 em,
 .contact-page small,
 .article-heading > p:last-child,
 .footer-bottom {
-  font-size: 12px;
+  font-size: var(--text-meta);
+  line-height: 1.6;
+}
+.article-prose p,
+.article-prose li {
+  font-size: clamp(19px, 1.4vw, 21px);
+}
+.hero-description {
+  max-width: 470px;
+}
+.intro > p:not(.eyebrow) {
+  max-width: 650px;
+}
+.join-copy {
+  max-width: 430px;
+}
+.join-copy p {
+  max-width: none;
+}
+.button {
+  min-height: 54px;
+  gap: 24px;
+}
+.text-link {
+  gap: 24px;
+}
+.desktop-nav {
+  gap: 28px;
+}
+.trip-info {
+  flex-wrap: wrap;
+}
+.trip-info p {
+  max-width: none;
+}
+.hero-bottom a {
+  max-width: 320px;
+}
+.belief-strip {
+  flex-wrap: wrap;
+  letter-spacing: 1px;
+}
+.eyebrow,
+.intro-coordinate {
+  letter-spacing: 1.5px;
 }
 .photo-stamp {
   font-size: 10px;
@@ -1778,71 +1859,166 @@ h2 em,
 .photo-stamp span {
   font-size: 9px;
 }
-.belief-strip {
-  letter-spacing: 1px;
+.site-header {
+  height: 136px;
 }
-.intro-coordinate {
-  letter-spacing: 2px;
+.brand-logo {
+  position: relative;
+  display: block;
+  width: 180px;
+  height: 112px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--paper);
+}
+.brand-logo img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  max-width: none;
+  left: -5px;
+  top: -48px;
+}
+.footer-top > .brand-logo {
+  align-self: start;
+}
+.payment-options {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 8%;
+  align-items: center;
+  background: #eef1e5;
+}
+.payment-options h2 {
+  font-size: clamp(42px, 4vw, 62px);
+}
+.payment-options-copy p {
+  color: #50624d;
+  margin: 0 0 22px;
+}
+.trip-community-note {
+  border-top: 1px solid var(--line);
+  margin-top: 40px;
+  padding-top: 24px;
+}
+.trip-community-note h3,
+.booking-panel h4 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0 0 16px;
+}
+.trip-community-note p,
+.contact-payment-note p {
+  color: #50624d;
+}
+.booking-panel .text-link {
+  gap: 16px;
+  line-height: 1.5;
+}
+.contact-payment-note {
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  margin-top: 32px;
+  scroll-margin-top: 24px;
+}
+.contact-payment-note h2 {
+  font-size: 28px;
+  line-height: 1.3;
+  letter-spacing: -0.7px;
+  margin: 0 0 16px;
+}
+@media (max-width: 1100px) {
+  .desktop-nav,
+  .nav-cta {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    color: inherit;
+    padding: 12px 0;
+    min-height: 48px;
+  }
+  .mobile-nav {
+    position: absolute;
+    top: 136px;
+    left: 0;
+    right: 0;
+    background: var(--blue);
+    padding: 15px 7% 30px;
+    color: white;
+  }
+  .mobile-nav a {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #ffffff30;
+    font-size: 22px;
+  }
+  .section-heading {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 760px) {
-  .belief-strip {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px 18px;
-    line-height: 1.6;
+  .site-header {
+    height: 100px;
   }
-  .belief-strip span {
-    font-size: 10px;
+  .mobile-nav {
+    top: 100px;
   }
-  .hero-bottom a {
-    max-width: 240px;
-    font-size: 10px;
+  .brand-logo {
+    width: 128px;
+    height: 82px;
+  }
+  .brand-logo img {
+    width: 144px;
+    height: 144px;
+    left: -6px;
+    top: -33px;
+  }
+  .hero-content {
+    top: 24%;
+  }
+  .hero h1 {
+    font-size: clamp(46px, 10.4vw, 79px);
+  }
+  .hero-description {
+    max-width: 370px;
     line-height: 1.7;
   }
-  .trip-year {
-    font-size: 10px;
+  .belief-strip {
+    justify-content: center;
+    gap: 12px 20px;
   }
-  .eyebrow {
-    font-size: 11px;
-    letter-spacing: 1.3px;
-  }
-  .intro-coordinate {
-    font-size: 10px;
+  .section-heading > div:last-child .text-link {
+    white-space: normal;
   }
   .collection-note {
-    font-size: 10px;
+    flex-wrap: wrap;
+    gap: 16px;
   }
-  .journal-meta {
-    font-size: 11px;
+  .filter-buttons {
+    flex-wrap: wrap;
   }
-  .founder-portrait > span {
-    font-size: 10px;
-    line-height: 1.7;
+  .footer-top > div {
+    gap: 20px;
   }
   .photo-caption {
-    font-size: 10px;
+    right: 25px;
+    letter-spacing: 1px;
   }
-  .hero-chapter .eyebrow {
-    font-size: 10px;
-  }
-  .article-heading > p:last-child {
-    font-size: 12px;
-  }
-  .footer-bottom {
-    font-size: 11px;
-  }
-  .trip-info p {
-    font-size: 12px;
+  .payment-options {
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
-.arrow-icon {
-  display: inline-flex;
-  width: 1em;
-  height: 1em;
-  vertical-align: -0.125em;
-  flex-shrink: 0;
-}
-.arrow-icon svg {
-  width: 100%;
-  height: 100%;
+@media (max-width: 360px) {
+  .hero h1 {
+    font-size: 40px;
+  }
 }

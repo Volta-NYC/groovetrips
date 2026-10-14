@@ -16,9 +16,9 @@ export default function Trips() {
           <em>curiosity.</em>
         </h1>
         <p>
-          New places. Local perspectives. Your kind of people.
+          Travel together. Shop local. Support artists and small businesses.
           <br />
-          Find a journey that feels like you.
+          Find a journey rooted in culture and community.
         </p>
       </section>
       <section className="section collection-section">

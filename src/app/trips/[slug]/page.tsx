@@ -57,6 +57,15 @@ export default async function Trip({
           {trip.paragraphs.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
+          <div className="trip-community-note">
+            <h3>Connection is part of the journey.</h3>
+            <p>
+              Travel with a community of curious people. Our approach puts
+              local artists, small vendors, and neighborhood businesses at
+              the heart of the experience, supporting the communities that
+              welcome us.
+            </p>
+          </div>
         </div>
         <aside className="booking-panel">
           <span className="eyebrow">LET’S GET YOU THERE</span>
@@ -77,6 +86,15 @@ export default async function Trip({
             Ask about this trip <Arrow />
           </a>
           <small>Connect directly with the GrooveTrips team.</small>
+          <div className="booking-rule" />
+          <h4>Plan your payments.</h4>
+          <p>
+            Ask about deposits and installment options. We’ll help you
+            understand the payment schedule for this journey before you commit.
+          </p>
+          <Link className="text-link" href="/contact#payment-options">
+            Discuss payment options <Arrow />
+          </Link>
         </aside>
       </section>
       <section className="section more-trips">

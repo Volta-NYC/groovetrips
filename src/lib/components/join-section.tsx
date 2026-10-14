@@ -12,8 +12,8 @@ export default function JoinSection() {
       </div>
       <div className="join-copy">
         <p>
-          Tell us what moves you. We’ll help you find a journey—and a
-          community—that feels like you.
+          Come as you are. Build friendships, support local communities, and
+          find a journey that feels like you. We’re here to help you plan.
         </p>
         <a
           href="https://www.groovetrips.com/contact-us"

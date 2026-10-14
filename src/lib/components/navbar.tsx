@@ -3,14 +3,13 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import Arrow from "@/lib/components/arrow";
+import BrandLogo from "@/lib/components/brand-logo";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const path = usePathname();
   return (
     <header className={`site-header ${path === "/" ? "over-hero" : ""}`}>
-      <Link href="/" className="wordmark" aria-label="GrooveTrips home">
-        groove<span>trips</span>
-      </Link>
+      <BrandLogo />
       <nav className="desktop-nav" aria-label="Main navigation">
         <Link href="/trips">Find your trip</Link>
         <Link href="/about">Our groove</Link>

@@ -17,6 +17,23 @@ The 37 files in `raw messy data/` are the primary source of truth. Every file wa
 - Trip imagery is original source imagery. The 2026 Bali and Turkey card images use the respective homepage destination images. All images are locally served; source URLs exist only in provenance records and outbound text links.
 - Editorial headings describe the supplied travel concept; they are not additional business facts.
 
+# October 14, 2026 client updates
+
+- Replaced the typeset header/footer wordmark and custom browser icon with the
+  original logo from the current GrooveTrips website. The client approved this
+  asset because the full brand kit is unavailable. `public/brand/README.md`
+  records its provenance; the artwork and color are unchanged.
+- Made community building, shopping with small vendors, supporting artists,
+  and choosing local businesses explicit in the homepage, about, collection,
+  and trip-detail copy.
+- Added deposit and installment planning copy, with links to the existing
+  inquiry flow. The client explicitly deferred online checkout integration.
+  No payment processor, payment schedule, deposit amount, or transaction
+  confirmation is represented as implemented.
+- Increased body text to 18–20px, navigation and action text to 16px, and
+  supporting metadata to 14px, including on mobile. The navigation collapses
+  earlier to accommodate the original logo and larger text.
+
 # Motion status
 
 Two independently directed Higgsfield options were requested using Kling 3.0 Turbo. Both were rejected before submission because the connected account needs Basic or higher. Film generation, selection, encoding, and real-footage scrub verification remain incomplete. The site contains working source-photography WebGL motion and a prepared optional local-video integration. No stock video or synthetic fake footage was substituted.

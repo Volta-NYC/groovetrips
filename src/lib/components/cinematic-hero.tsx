@@ -307,11 +307,8 @@ export default function CinematicHero({
             Find your <em>groove.</em>
           </h1>
           <p className="hero-description">
-            For the culturally curious. The music lovers.
-            <br />
-            The just-one-more-adventure people.
-            <br />
-            Your tribe is out there.
+            Build community through shared adventures. Shop small, support local
+            artists, and connect with the people who make each place its own.
           </p>
           <Link href="/trips" className="button button-white">
             Explore the trips <Arrow />

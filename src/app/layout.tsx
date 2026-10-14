@@ -8,7 +8,8 @@ export const metadata: Metadata = {
     template: "%s | GrooveTrips",
   },
   description:
-    "Find your travel tribe. Culturally immersive group journeys, local connections, and extraordinary places with GrooveTrips.",
+    "Build community through culturally immersive group travel. Shop local, support artists and small businesses, and explore payment options with GrooveTrips.",
+  icons: { icon: "/brand/groovetrips-logo.png" },
 };
 export default function RootLayout({
   children,

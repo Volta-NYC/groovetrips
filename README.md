@@ -19,6 +19,8 @@ Open http://localhost:3000. Build with `npm run build`, then serve with `npm sta
 - All 364 distinct source images downloaded, optimized, and locally served. Each has 480px and 960px variants, plus a full-size WebP capped at 1920px. Fonts are local too.
 - Reduced-motion and unavailable-WebGL fallbacks. Content and links are server-rendered and readable without JavaScript.
 - Real inquiry links to the existing GrooveTrips form. No fabricated bookings, prices, availability, testimonials, or contact details.
+- Original GrooveTrips website logo in the header, footer, and browser icon; asset provenance is in `public/brand/README.md`.
+- Community and local-business messaging, larger responsive typography, and deposit/installment planning information. Online checkout was deferred by the client; payment inquiries continue through the existing GrooveTrips form.
 
 ## Video status — blocked
 

@@ -1,12 +1,11 @@
 import Link from "next/link";
 import Arrow from "@/lib/components/arrow";
+import BrandLogo from "@/lib/components/brand-logo";
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <Link className="wordmark" href="/">
-          groove<span>trips</span>
-        </Link>
+        <BrandLogo />
         <p>
           A world to explore.
           <br />A community to come home to.
@@ -16,6 +15,7 @@ export default function Footer() {
           <Link href="/about">Our story</Link>
           <Link href="/journal">Travel journal</Link>
           <Link href="/contact">Let’s connect</Link>
+          <Link href="/contact#payment-options">Payment options</Link>
         </div>
       </div>
       <div className="footer-bottom">

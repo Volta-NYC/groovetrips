@@ -1,6 +1,7 @@
 import LocalImage from "@/lib/components/local-image";
 import JoinSection from "@/lib/components/join-section";
 import images from "@/lib/data/source-images.json";
+import PaymentOptions from "@/lib/components/payment-options";
 export const metadata = {
   title: "Our groove",
   description:
@@ -18,9 +19,9 @@ export default function About() {
           <em>Connection is the point.</em>
         </h1>
         <p>
-          We’re building a world where travel is personal, accessible,
+          We’re building community through personal, accessible travel
           <br />
-          and rooted in the communities that welcome us.
+          rooted in the places and people that welcome us.
         </p>
       </section>
       <div className="about-banner">
@@ -58,9 +59,10 @@ export default function About() {
             experiences for artists and adventurers.
           </p>
           <p>
-            Working with local vendors, guides, artists, and wellness
-            professionals, she designs and leads journeys that are meaningful
-            for travelers and the communities they visit.
+            Working directly with small vendors, local guides, artists, and
+            wellness professionals, she designs journeys that bring travelers
+            together and support the businesses and communities that welcome
+            them.
           </p>
           <p>
             She is also a Brand Ambassador for Capezio in Cuba and a
@@ -79,8 +81,9 @@ export default function About() {
         <div className="mission-columns">
           <p>
             Our mission is to make travel accessible, meaningful, and beneficial
-            for everyone involved. We connect like-minded travelers and partner
-            directly with local artists, guides, and vendors.
+            for everyone involved. In the countries we visit, we shop local,
+            support small vendors and artists, and partner with local
+            businesses so our journeys contribute to the communities we meet.
           </p>
           <p>
             Created with BIPOC travelers in mind, GrooveTrips makes room for
@@ -90,6 +93,7 @@ export default function About() {
           </p>
         </div>
       </section>
+      <PaymentOptions />
       <JoinSection />
     </>
   );
